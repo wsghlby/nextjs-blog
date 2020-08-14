@@ -1,4 +1,4 @@
-import '../styles/common.global.scss'
+// import '../styles/common.global.scss'
 import 'antd/dist/antd.css'
 
 
