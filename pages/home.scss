@@ -1,0 +1,26 @@
+.home {
+  text-align: center;
+  .header {
+    background: #fff;
+  }
+  .body-container {
+    //background: #f4f4f4;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 70px;
+    max-width: 1120px;
+
+    .sidebar-container {
+      display: flex;
+      justify-content: center;
+    }
+
+  }
+}
+
+@media(max-width: 480px) {
+  .body-container {
+    padding: 0;
+  }
+}

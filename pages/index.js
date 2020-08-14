@@ -6,7 +6,7 @@ import SideBar from '../components/layout/sidebar/home-left-sidebar'
 import ArticleList from '../components/ArticleList'
 import {useDispatch, useSelector} from "react-redux";
 import LargeSpinner from "@/components/LargeSpinner";
-
+import './home.scss';
 
 import {connect} from "react-redux";
 
