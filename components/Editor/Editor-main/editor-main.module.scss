@@ -1,0 +1,7 @@
+.editor-main-component {
+  .textarea {
+    resize: none;
+    height: calc(100vh - 90px);
+    min-height: 400px;
+  }
+}

@@ -1,0 +1,22 @@
+.header-left-component {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  .icon {
+    padding-left: 10px;
+    padding-right: 10px;
+    img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  span {
+    //font-family: "Courier New", Courier, monospace;
+    //font-size: 22px;
+    //font-weight: 200;
+    //letter-spacing: 3px;
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 3px;
+  }
+}

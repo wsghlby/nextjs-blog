@@ -1,0 +1,33 @@
+.blog-header {
+  padding: 0;
+  background: #fff;
+  -webkit-box-shadow: 0 2px 8px #f0f1f2;
+  box-shadow: 0 2px 8px #f0f1f2;
+  position: relative;
+  z-index: 10;
+  max-width: 100%;
+
+  .header-left {
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+  }
+  .header-right {
+    height: 64px;
+    line-height: 64px;
+    width: 100%;
+    position: relative;
+  }
+}
+
+.blog-sidebar{
+  height: calc(100vh - 64px - 40px);
+  text-align: center;
+  color: rgba(0, 0, 0, 0.65);
+  overflow-y: auto;
+  .sidebar-avatar{
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+  }
+}

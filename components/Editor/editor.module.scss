@@ -1,0 +1,41 @@
+
+
+
+
+.editor-component {
+  background: #fff;
+
+  .body-container {
+    //background: #f4f4f4;
+    padding-top: 60px;
+    .editor-body {
+      padding: 30px 60px 0;
+      .sidebar {
+        padding-right: 15px;
+      }
+
+      .main {
+        padding-left: 15px;
+        padding-top: 30px;
+      }
+    }
+  }
+  .hide {
+    display: none;
+  }
+  @media(max-width: 480px) {
+    .body-container {
+      padding: 0 5px;
+      .sidebar {
+        padding: 0;
+      }
+      .main {
+        padding: 0;
+      }
+    }
+  }
+}
+
+
+
+

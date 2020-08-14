@@ -1,0 +1,33 @@
+
+.category-page {
+  .body-container {
+    //background: #f4f4f4;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 70px;
+    max-width: 1120px;
+    .category-list-box {
+      position: relative;
+      width: 100%;
+      margin-left: 30px;
+      display: flex;
+      justify-content: center;
+    }
+    .empty-box {
+      padding-top: 30%;
+    }
+  }
+
+
+
+  @media (max-width: 992px) {
+    .category-list-box {
+      margin-left: 0;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+
+}
+

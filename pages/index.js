@@ -1,65 +1,76 @@
+import React, { useState, useEffect } from 'react'
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import { Button, Row, Col } from 'antd'
+import WebHeader from '../components/layout/header'
+import SideBar from '../components/layout/sidebar/home-left-sidebar'
+import ArticleList from '../components/ArticleList'
+import './home.scss'
+import {useDispatch, useSelector} from "react-redux";
+import {getArticleListOnce} from "@/actions/article";
+import LargeSpinner from "@/components/LargeSpinner";
+import {getFolderList} from "@/actions/folder-list";
+import {getCurrUser} from "@/actions/auth";
 
-export default function Home() {
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+import {connect} from "react-redux";
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+const responsiveLeft =   { xxl: 5, xl: 5, lg: 5, md: 0, xs: 0 };
+const responsiveMiddle = { xxl: 19, xl: 19, lg: 19, md: 24, xs: 24 };
+// const responsiveRight =  { xxl: 4, xl: 4, lg: 0, md: 0, xs: 0 };
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+const Home = () => {
+    const articleListObj = useSelector(state => state.article.articleList);
+    const [spinnerHide, setSpinnerHide] = useState(true);
+    // const [listLoaded, setListLoaded] = useState(false);
+    // const [articleList, setArticleList] = useState(articleListObj);
+    // const dispatch = useDispatch();
+    // useEffect( () => {
+    //     if (!articleListObj) {
+    //         dispatch(getArticleListOnce()).then( () => {
+    //             // setListLoaded(true);
+    //             setSpinnerHide(true);
+    //             setArticleList(articleListObj);
+    //             setListLoaded(true);
+    //             // setSpinnerHide(true);
+    //         } )
+    //     }else{
+    //         setSpinnerHide(true);
+    //         setListLoaded(true);
+    //     }
+    // }, []);
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+    return(
+    <div className={'home'}>
+        <Head>
+            <title>Home</title>
+        </Head>
+        <WebHeader menuKey={'home'} />
+        <LargeSpinner spinnerHide={spinnerHide}/>
+        <div className={'body-container'}>
+            <Row>
+                <Col {...responsiveLeft}>
+                    <div className={'sidebar-container'}>
+                        <SideBar />
+                    </div>
+                </Col>
+                <Col {...responsiveMiddle}>
+                    {/*{listLoaded ? (*/}
+                    {/*    <ArticleList setSpinnerHide={setSpinnerHide} articleList={articleList}/>*/}
+                    {/*) : (*/}
+                    {/*    <></>*/}
+                    {/*)}*/}
+                    <ArticleList setSpinnerHide={setSpinnerHide} articleList={articleListObj}/>
+                </Col>
+                {/*<Col {...responsiveRight}>*/}
+                {/*    <SideBar />*/}
+                {/*</Col>*/}
 
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+            </Row>
         </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
     </div>
-  )
-}
+)};
+
+
+
+export default connect((state) => state)(Home)

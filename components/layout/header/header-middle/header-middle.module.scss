@@ -1,0 +1,64 @@
+.header-middle-component {
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+  .item {
+    margin-top: -2px;
+
+    padding: 0 10px;
+
+    //display: flex;
+    //flex-direction: row;
+    vertical-align: center;
+    text-align: center;
+    .icon {
+      display: inline-block;
+      svg {
+        width: 16px;
+        height: 16px;
+
+      }
+
+      vertical-align: -2px;
+    }
+    .icon:hover {
+      fill: #1890ff;
+    }
+    //.icon:hover {
+    //  fill: #1890ff;
+    //}
+    span {
+      margin-left: 10px;
+      display: inline-block;
+      font-size: 16px;
+    }
+  }
+
+  .ant-menu {
+    border: 0;
+    background: transparent;
+    .ant-menu-item {
+      //margin-top: 0;
+      margin-top: 1px;
+
+      //margin-left: 0;
+      //margin-right: 0;
+
+      border-bottom: 0;
+      //margin-bottom: ;
+      //margin: 0 0 -2px;
+    }
+    .ant-menu-item-selected {
+      margin-top: -1px;
+      border-top: 2px solid #1890ff;
+      fill: #1890ff;
+      border-bottom: 0;
+    }
+    .ant-menu-item:hover {
+      margin-top: -1px;
+      border-top: 2px solid #1890ff;
+      fill: #1890ff;
+      border-bottom: 0;
+    }
+  }
+}

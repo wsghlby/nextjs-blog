@@ -1,0 +1,40 @@
+
+.home-sidebar-component {
+  position: relative;
+  width: 100%;
+  .home-sidebar {
+    //border-right: 1px solid #ebedf0;
+    position: fixed;
+    top: 25%;
+    height: calc(100vh - 64px - 40px);
+    text-align: center;
+    color: #8e8787;
+    overflow-y: auto;
+
+    .sidebar-avatar {
+      width: 132px;
+      height: 132px;
+      border-radius: 50%;
+    }
+
+    .sidebar-user-name {
+      font-size: 1.5em;
+      font-weight: 500;
+      margin-top: 10px;
+      //font-family: "Courier New", Courier, monospace;
+      font-family: "Lucida Console", Monaco, monospace;
+    }
+
+    .user-info {
+      .icon {
+        font-size: 20px;
+        margin-top: 20px;
+      }
+      .github-href {
+        text-decoration: none;
+        color: #8e8787;
+      }
+    }
+  }
+
+}

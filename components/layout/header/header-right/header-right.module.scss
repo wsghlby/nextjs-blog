@@ -1,0 +1,24 @@
+.header-right-component{
+
+  .header-userInfo {
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 10px;
+    img {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+    }
+  }
+
+  .spinner {
+    text-align: center;
+    height: 60px;
+  }
+
+
+  .hide {
+    display: none;
+  }
+
+}

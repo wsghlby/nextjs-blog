@@ -1,0 +1,114 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "2188989",
+      "name": "邮箱",
+      "font_class": "youxiang",
+      "unicode": "e7eb",
+      "unicode_decimal": 59371
+    },
+    {
+      "icon_id": "3659203",
+      "name": "书签",
+      "font_class": "shuqian",
+      "unicode": "e66a",
+      "unicode_decimal": 58986
+    },
+    {
+      "icon_id": "3832245",
+      "name": "邮箱",
+      "font_class": "youxiang1",
+      "unicode": "e6b3",
+      "unicode_decimal": 59059
+    },
+    {
+      "icon_id": "4802012",
+      "name": "书签",
+      "font_class": "shuqian1",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "9615633",
+      "name": "书签",
+      "font_class": "shuqian2",
+      "unicode": "e645",
+      "unicode_decimal": 58949
+    },
+    {
+      "icon_id": "10120130",
+      "name": "书签",
+      "font_class": "shuqian3",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    },
+    {
+      "icon_id": "10526174",
+      "name": "电 话",
+      "font_class": "dianhua",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "10847354",
+      "name": "书签",
+      "font_class": "shuqian4",
+      "unicode": "e649",
+      "unicode_decimal": 58953
+    },
+    {
+      "icon_id": "12054774",
+      "name": "分 享 (1)",
+      "font_class": "fenxiang-copy-copy",
+      "unicode": "e503",
+      "unicode_decimal": 58627
+    },
+    {
+      "icon_id": "12191345",
+      "name": "电 话",
+      "font_class": "dianhua1",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "12713506",
+      "name": "点赞",
+      "font_class": "zanpress",
+      "unicode": "e50a",
+      "unicode_decimal": 58634
+    },
+    {
+      "icon_id": "13521744",
+      "name": "评 论",
+      "font_class": "comment",
+      "unicode": "e502",
+      "unicode_decimal": 58626
+    },
+    {
+      "icon_id": "15204251",
+      "name": "书签",
+      "font_class": "shuqian5",
+      "unicode": "e682",
+      "unicode_decimal": 59010
+    },
+    {
+      "icon_id": "15206344",
+      "name": "书签",
+      "font_class": "shuqian6",
+      "unicode": "e6a7",
+      "unicode_decimal": 59047
+    },
+    {
+      "icon_id": "15347026",
+      "name": "书签",
+      "font_class": "shuqian7",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    }
+  ]
+}

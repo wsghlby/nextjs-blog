@@ -1,0 +1,95 @@
+.category-list-component {
+  //position: fixed;
+  //top: 30%;
+  //width: 15%;
+  position: relative;
+  width: 100%;
+  padding-top: 30px;
+  .category-list-container{
+    position: relative;
+    width: 100%;
+
+    .category-list-header {
+      position: relative;
+      width: 100%;
+      //border-bottom: 2px solid rgba(0, 0, 0, 0.65);
+      border-bottom: 1px solid rgba(0,0,0,.1);
+      line-height: 50px;
+      text-align: center;
+      font-size: 18px;
+      letter-spacing: 2px;
+      font-weight: 500;
+    }
+
+    .category-list {
+      position: relative;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      .category-list-item{
+        margin: 0;
+        height: 50px;
+        padding: 0 10px 0;
+        position: relative;
+        width: 100%;
+        border-bottom: 1px solid rgba(0,0,0,.1);
+        //display: flex;
+        //justify-content: center;
+        vertical-align: center;
+
+        .item-box {
+          padding-top: 12px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          font-size: 16px;
+          .category-count {
+            padding: 0 8px 0;
+            border: 1px solid rgba(0,0,0,.1);
+            border-radius: 16px;
+          }
+        }
+          .item-box:hover {
+            font-weight: 500;
+            cursor: pointer;
+            .category-count {
+              padding: 0 8px 0;
+              border: 1px solid #1890ff;
+              border-radius: 16px;
+            }
+            .category-name {
+              color: #1890ff;
+            }
+          }
+      }
+      .category-selected {
+        .item-box {
+          font-weight: 500;
+          cursor: pointer;
+
+          .category-count {
+            padding: 0 8px 0;
+            border: 1px solid #1890ff;
+            border-radius: 16px;
+          }
+
+          .category-name {
+            color: #1890ff;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .category-list-component {
+    position: relative;
+    width: 65%;
+  }
+}
+
+
+

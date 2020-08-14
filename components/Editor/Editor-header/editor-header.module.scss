@@ -1,0 +1,47 @@
+.editor-header-component {
+  background: #fff;
+  position: fixed;
+  top:0;
+  width: 100%;
+  z-index: 10;
+  //-webkit-box-shadow: 0 2px 8px #f4f4f4;
+  //box-shadow: 0 2px 8px #f4f4f4;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+
+  .blog-header {
+    background: #fff;
+  }
+  .editor-menu-container {
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+    .ant-menu {
+      border: 0;
+      background: transparent;
+      .ant-menu-item {
+        border-bottom: 0;
+        //margin-bottom: -2px;
+        margin-top: 1px;
+        //margin-left: 0;
+        //margin-right: 0;
+        span {
+          //padding: 0 20px;
+        }
+      }
+      .ant-menu-item-selected {
+        margin-top: -1px;
+        border-top: 2px solid #1890ff;
+        border-bottom: 0;
+      }
+      .ant-menu-item:hover {
+        margin-top: -1px;
+        border-top: 2px solid #1890ff;
+        border-bottom: 0;
+      }
+    }
+  }
+}
+
+
+
+

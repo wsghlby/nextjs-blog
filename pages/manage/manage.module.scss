@@ -1,0 +1,19 @@
+.manage-page {
+  display: flex;
+  justify-content: center;
+  .table-container {
+    width: 100%;
+    //padding-top: 70px;
+    //font-size: 18px;
+    max-width: 1120px;
+    padding: 80px 10px 0;
+    th {
+      background: transparent;
+    }
+    .row-title {
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+    }
+  }
+}
