@@ -1,46 +1,13 @@
-// import '../styles/common.global.scss'
+import '../styles/common.global.scss'
 import 'antd/dist/antd.css'
 
-// import {message} from "antd";
 
-// function MyApp({ Component, pageProps }) {
-//   return <Component {...pageProps} />
-// }
-//
-// export default MyApp
-
-import React, { useEffect, useState } from 'react';
-// import {wrapper, persistor} from '../redux';
-import {useStore} from 'react-redux';
-import { Provider } from 'react-redux';
+import React from 'react';
 import { wrapper } from '../redux';
-// import { PersistGate } from 'redux-persist/integration/react';
-import { useDispatch } from "react-redux";
 import Footer from "@/components/Footer";
 import { getArticleListOnce } from '@/actions/article';
-import { getCurrUser } from "@/actions/auth";
 import { getFolderList } from "@/actions/folder-list";
 
-
-// const AppWrapper = ({ children }) => {
-//     const dispatch = useDispatch();
-//     const [loaded, setLoaded] = useState(false);
-//     useEffect(() => {
-//         dispatch(getFolderList()).then(() => {
-//             dispatch(getArticleListOnce()).then(() => {
-//                 dispatch(getCurrUser()).then(() => {
-//                     setLoaded(true);
-//                 });
-//             })
-//         } );
-//
-//     }, []);
-//     return ({loaded ? (
-//         <>{children}</>
-//         ) : (
-//             <></>
-//         )});
-// };
 
 const AppWrapper = ({ children }) => {
     return (
@@ -52,8 +19,6 @@ const AppWrapper = ({ children }) => {
 };
 
 const MyApp = ({Component, pageProps}) => {
-    // const store = useStore();
-    // console.log(store);
     return (
         // <Provider store={store}>
             <AppWrapper >

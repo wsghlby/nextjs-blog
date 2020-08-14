@@ -6,8 +6,6 @@ import ArticleBox from "@/components/ArticleBox";
 import { useRouter } from 'next/router';
 import './article.module.scss';
 import {useDispatch, useSelector} from "react-redux";
-import LargeSpinner from "@/components/LargeSpinner";
-import {getArticleListOnce} from "@/actions/article";
 
 
 const Article = () => {

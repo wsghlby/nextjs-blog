@@ -5,13 +5,8 @@ import WebHeader from '@/components/layout/header'
 import ArticleList from '@/components/ArticleList'
 
 import {useDispatch, useSelector} from "react-redux";
-import {getArticleListOnce} from "@/actions/article";
 import LargeSpinner from "@/components/LargeSpinner";
 import CategoryList from "@/components/CategoryList";
-import {getFolderList} from "@/actions/folder-list";
-import {getCurrUser} from "@/actions/auth";
-
-import {connect} from "react-redux";
 import './category.module.scss'
 
 
