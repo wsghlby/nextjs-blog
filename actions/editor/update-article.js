@@ -10,7 +10,6 @@ export const UpdateArticle = (updates) => async dispatch => {
         console.log(new Date().toLocaleString());
         firebase.database().ref().update(updates).then( () => {
             dispatch(getArticleListOnce());
-            message.success('Article updated');
         }).catch( () => {
             // dispatch({ type: GENERAL_ERROR, payload: "Invalid login credentials" });
             message.error(`Error: ${error.code}`);

@@ -94,9 +94,11 @@ const CommentArea = (props) => {
             console.log('editor updates');
             console.log(updates);
             dispatch(UpdateArticle(updates)).then(() => {
+                setNewComment('');
                 setCommentList( newCommentList );
                 setCommentNumber(newCommentList.length);
                 setSubmitting(false);
+                message.success('Comment success');
             }).catch((error) => {
                 console.log(error);
             });

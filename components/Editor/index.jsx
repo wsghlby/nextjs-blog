@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import EditorHeader from '@/components/Editor/Editor-header'
 import Head from "next/head";
-import {Button, Col, Row, Spin} from "antd";
+import {Button, Col, message, Row, Spin} from "antd";
 import EditorSidebar from '@/components/Editor/Editor-sidebar'
 import EditorMain from "@/components/Editor/Editor-main";
 import ArticleBox from "@/components/ArticleBox";
@@ -51,6 +51,7 @@ const Editor = (props) => {
             dispatch(UpdateArticle(updates)).then(() => {
                 router.back();
                 router.replace('/');
+                message.success('Article updated');
             }).catch((error) => {
                 console.log(error);
             });
