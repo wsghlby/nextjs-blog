@@ -1,9 +1,9 @@
 export const user = {
-    name: 'Xiaomeng',
+    name: '小王',
     avatar: 'avatar.jpg',
-    email: 'xw2114@nyu.edu',
-    phone: '646-963-3446',
-    github: 'https://github.com/wsghlby',
+    email: 'xw2114@xxx.edu',
+    phone: '646-xxx-3446',
+    github: 'https://github.com/xxx',
 };
 
 export const firebaseConfig = {
